@@ -1,0 +1,7 @@
+<h1> All Events </h1>
+
+<h2> <% for titles in @events %>
+    <ul>
+        <li> <a href="/events/<%= titles[:id]%>"> <%= titles[:title] %> </li>
+    </ul>
+    <% end %>

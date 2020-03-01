@@ -1,0 +1,21 @@
+<div class="container-lg">    
+    <div class="row">
+        <div class="col-md-9">
+            <h2> <i class="far fa-calendar-alt"></i>
+             <%= @event_detail[:date] %>
+            <h1> <%= @event_detail[:title] %> </h1>
+            <h5> <%= @event_detail[:description] %> </h5>
+            <p class= "mt-5"> <a href="/events/<%= @event_detail[:id]%>/rsvps/new" class="btn btn-primary">RSVP!</a></p>
+
+        </div>
+        <div class="col-md-3">
+            <h2> When? </h2>
+            <h5 class="event_data"> <%= @event_detail[:date] %> </h5>
+            <h2> When? </h2>
+            <h5 class="event_data"> <%= @event_detail[:location] %> </h5>
+            <h2> How many guests so far? </h2>
+            <h5 class="event_data"></h5> 
+        </div>
+    </div>  
+</div>
+        
